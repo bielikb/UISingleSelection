@@ -15,6 +15,7 @@
 		21708CDD2237200A00E27F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21708CDB2237200A00E27F87 /* LaunchScreen.storyboard */; };
 		21708CF32237320600E27F87 /* LabelWithSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21708CF22237320600E27F87 /* LabelWithSelectionTableViewCell.swift */; };
 		21708D04223739D400E27F87 /* UISingleSelection.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21708D002237324300E27F87 /* UISingleSelection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21F7AC20225A4F7500CCCB1F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F7AC1F225A4F7500CCCB1F /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		21708CDE2237200A00E27F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21708CF22237320600E27F87 /* LabelWithSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithSelectionTableViewCell.swift; sourceTree = "<group>"; };
 		21708CFB2237324300E27F87 /* UISingleSelection.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISingleSelection.xcodeproj; path = ../UISingleSelection.xcodeproj; sourceTree = "<group>"; };
+		21F7AC1F225A4F7500CCCB1F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		2160016D2237BFE200A92102 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				21F7AC1F225A4F7500CCCB1F /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -98,15 +101,15 @@
 		21708CD12237200A00E27F87 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				2160016D2237BFE200A92102 /* Extensions */,
-				21708CF1223731F500E27F87 /* Views */,
-				21708CD22237200A00E27F87 /* AppDelegate.swift */,
-				21708CD42237200A00E27F87 /* ViewController.swift */,
-				21708CD62237200A00E27F87 /* Main.storyboard */,
-				21708CD92237200A00E27F87 /* Assets.xcassets */,
-				21708CDB2237200A00E27F87 /* LaunchScreen.storyboard */,
 				21708CDE2237200A00E27F87 /* Info.plist */,
 				2160016E2237BFED00A92102 /* Animations.swift */,
+				21708CD22237200A00E27F87 /* AppDelegate.swift */,
+				21708CD42237200A00E27F87 /* ViewController.swift */,
+				21708CD92237200A00E27F87 /* Assets.xcassets */,
+				2160016D2237BFE200A92102 /* Extensions */,
+				21708CDB2237200A00E27F87 /* LaunchScreen.storyboard */,
+				21708CD62237200A00E27F87 /* Main.storyboard */,
+				21708CF1223731F500E27F87 /* Views */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					21708CCE2237200A00E27F87 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -220,6 +224,7 @@
 				21708CD32237200A00E27F87 /* AppDelegate.swift in Sources */,
 				2160016F2237BFED00A92102 /* Animations.swift in Sources */,
 				21708CF32237320600E27F87 /* LabelWithSelectionTableViewCell.swift in Sources */,
+				21F7AC20225A4F7500CCCB1F /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +387,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.singleselection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -400,7 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.singleselection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

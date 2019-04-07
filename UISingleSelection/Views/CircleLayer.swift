@@ -128,7 +128,9 @@ public final class CircleView : UIView {
         return newRect.integral
     }
 
-    public func setRadius(_ radius: CGFloat, animated: Bool = false, duration: CFTimeInterval = 0.0) {
+    public func setRadius(_ radius: CGFloat,
+                          animated: Bool = false,
+                          duration: CFTimeInterval = 0.0) {
         UIView.animate(withDuration: duration) { [weak self] in
             guard let self = self else { return }
             self.bounds = self.newRect(radius: radius, center: self.bounds.center)

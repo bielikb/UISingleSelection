@@ -124,9 +124,6 @@ public final class ThreeCirclesView: UIView {
     }
 
     public func setState(state: CirclesState, animated: Bool) {
-        guard self.state != state else {
-            return
-        }
         self.state = state
 
         // radiuses
